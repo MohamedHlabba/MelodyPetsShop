@@ -1,0 +1,15 @@
+﻿@model DogsListViewModel
+
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1>@Model.CurrrentCategory</h1>
+@foreach (var dog in Model.Dogs)
+{
+  
+   <partial name="_DogCard" model="dog" />
+
+}
+
+

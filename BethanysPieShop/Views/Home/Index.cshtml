@@ -1,0 +1,15 @@
+﻿@model HomeViewModel
+
+<partial name="_Carousel" />
+<h2>
+    Dog Of the Month
+</h2>
+<h4>Our monthly selection - Just for you !</h4>
+
+<div class="row">
+    @foreach (var dog in Model.DogsOfTheWeek)
+    {
+        <partial name="_DogCard" model="dog" />
+
+    }
+</div>
